@@ -23,8 +23,7 @@ pipeline{
 		}
 		stage('Docker'){
 			steps {
-				sh "usermod -a -G sudo jenkins"
-				sh "apt-get update && install docker"
+				sh "docker run devtayana/jenkin-api:1.0.0"
 			}
 		}
 	}
