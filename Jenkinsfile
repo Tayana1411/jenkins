@@ -23,7 +23,7 @@ pipeline{
 		}
 		stage('Docker'){
 			steps {
-				usermod -a -G sudo jenkins
+				sh "usermod -a -G sudo jenkins"
 				sh "apt-get update && install docker"
 			}
 		}
