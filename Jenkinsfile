@@ -21,5 +21,10 @@ pipeline{
 				echo "Pass!"
 			}
 		}
+		stage('Docker'){
+			steps {
+				run apt-get update && apt-get -y install docker
+			}
+		}
 	}
 }
