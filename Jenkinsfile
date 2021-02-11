@@ -23,7 +23,7 @@ pipeline{
 		}
 		stage('Docker'){
 			steps {
-				sh "docker run devtayana/jenkin-api:1.0.0"
+				sh "sudo docker run devtayana/jenkin-api:1.0.0"
 			}
 		}
 	}
