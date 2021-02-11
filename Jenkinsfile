@@ -23,7 +23,7 @@ pipeline{
 		}
 		stage('Docker'){
 			steps {
-				sh "mkdir -p output"
+				sh "run apt-get update && install docker"
 			}
 		}
 	}
